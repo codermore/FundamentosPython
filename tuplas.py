@@ -51,12 +51,19 @@ def obtener_datos():
 
 '''
     Desempaquetado de tupla
+
+    El guion bajo '_' es una convecion para decir que ese dato no nos interesa.
 '''
 
-mensaje, numero, _ = obtener_datos()
+def obtener_datos():
+    return ("Hola", 42, True)
+
+mensaje, numero, _= obtener_datos()
 
 print(mensaje)  # "Hola"
+
 print(numero)   # 42
+
 # No imprimimos `_` porque lo ignoramos
 
 
