@@ -45,4 +45,19 @@ print('La cantidad de frutas en el canasto es de: ', canasto_de_frutas_total)
 print('indice de banana es: ', indice)  # Esto imprimirá 2, que es la segunda aparición de 'banana'
 print('cantidad de bananas es: ', bananas_total)
 
+def obtener_datos():
+    return ("Hola", 42, True)
+
+
+'''
+    Desempaquetado de tupla
+'''
+
+mensaje, numero, _ = obtener_datos()
+
+print(mensaje)  # "Hola"
+print(numero)   # 42
+# No imprimimos `_` porque lo ignoramos
+
+
 
