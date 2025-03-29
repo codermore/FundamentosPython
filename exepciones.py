@@ -1,6 +1,6 @@
 ############ Try ############
 '''
-El bloque try contiene el código que puede generar una excepción. 
+El bloque try contiene el código que puede generar una excepción.
 Si ocurre una excepción dentro del bloque try, el flujo de ejecución se transfiere al bloque except correspondiente.
 '''
 try:
@@ -57,13 +57,13 @@ Esto significa que se crea y se lanza una nueva excepción con un mensaje que de
 
 try:
     funcion()
-except Exception as e:
-    print(f"Error: {str(e)}")
+except Exception as error:
+    print(f"Error: {str(error)}")
 
 '''
 Aquí utilizas un bloque try para llamar a funcion(). Si funcion() lanza una excepción, se ejecutará el bloque except.
 En el bloque except, capturas la excepción en la variable e y luego imprimes un mensaje que incluye la descripción de la excepción. 
-La función str(e) convierte la excepción en una cadena para que puedas mostrar el mensaje de error.
+La función str(error) convierte la excepción en una cadena para que puedas mostrar el mensaje de error.
 '''
 
 
